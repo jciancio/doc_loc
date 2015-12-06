@@ -32,16 +32,15 @@
         <%#= notice %>
         <%= alert %>
         <ul>
-          <% if session[:user_id] %>
-          <%#= link_to 'Edit Account', edit_user_path(@user) %>
-          <%= link_to 'Sign Out', logout_path %>
-          <!-- <a href="tel:911">Emergency</a> -->
+          <% if user_signed_in? %>
+          Logged in as <strong><%= current_user.email %></strong>.
           <%= link_to "Home", homepage_path %>
           <%= link_to "Health Forum", messages_path %>
+          <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+          <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
           <% else %>
-
-          <%= link_to 'Sign In', new_sessions_path %>
-          <%= link_to 'Sign Up', new_user_path %>
+          <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+          <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
           <% end %>
         </ul>
         <!-- Navigation -->
@@ -62,27 +61,15 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
-                <% if session[:user_id] %>
-                <!-- Considered adding Emergency button. Makes more sense when we go mobile -->
-                <!-- <li><a href="tel:911">Emergency</a></li> -->
-                <li><%= link_to "Home", homepage_path %></li>
-                <li><%= link_to "Health Forum", messages_path %></li>
-                <li><%= link_to 'Sign Out', logout_path %></li>
+                <% if user_signed_in? %>
+                Logged in as <strong><%= current_user.email %></strong>.
+                <%= link_to "Home", homepage_path %>
+                <%= link_to "Health Forum", messages_path %>
+                <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+                <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
                 <% else %>
-                <li class="hidden">
-                  <a href="#page-top"></a>
-                </li>
-                <li class="page-scroll">
-                  <a href="#about">About</a>
-                </li>
-                <!-- <li class="page-scroll">
-                  <a href="#portfolio">Founders</a>
-                </li>
-                <li class="page-scroll">
-                  <a href="#contact">Contact</a>
-                </li> -->
-                <li><%= link_to 'Sign In', new_sessions_path %></li>
-                <li><%= link_to 'Sign Up', new_user_path %></li>
+                <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+                <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
                 <% end %>
               </ul>
             </div>
