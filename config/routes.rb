@@ -8,16 +8,6 @@ Rails.application.routes.draw do
     resources :comments
   end
 
-  root 'sessions#welcome'
-
-  resource :sessions
-
-  resources :users, except: :index
-
-  get 'homepage' => 'sessions#homepage'
-
-  get 'logout' => 'sessions#logout'
-
   # get 'sessions/new'
   # get 'users/new'
   # get 'users/show'
