@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   get 'welcome/index'
   root 'welcome#index'
+  get '/homepage' => 'welcome#homepage'
 
   devise_for :users
   resources :comments
