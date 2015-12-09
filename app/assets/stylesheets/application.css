@@ -53,8 +53,18 @@ p#doc-search input {
 div.col-md-4.text-center {
   float: none !important;
 }
+
 /* SIGN UP AND SIGN IN FORM CSS CAN BE FOUND BELOW,
 BOTH OPERATE USING SEPERATE BOOTSTRAP ELEMENTS THAN THE REST OF THE PAGES*/
+
+form {
+  text-align: center;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+}
 
 #signup .header h3, .new_user .header h3 {
   color: #333333;
