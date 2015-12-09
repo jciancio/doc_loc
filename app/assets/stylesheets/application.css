@@ -54,9 +54,18 @@ div.col-md-4.text-center {
   float: none !important;
 }
 
+/* Styling for Sign Up button */
 input.btn:hover {
   background-color: #18bc9c;
   color: #fff;
+}
+
+ul.devise_links {
+  padding-top: 1em;
+}
+
+ul.devise_links a {
+  margin: 40%;
 }
 
 /* SIGN UP AND SIGN IN FORM CSS CAN BE FOUND BELOW,
