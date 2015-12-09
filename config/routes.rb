@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
 
+  get 'welcome/index'
+  root 'welcome#index'
+  get '/homepage' => 'welcome#homepage'
+
+  devise_for :users
   resources :comments
   resources :comments
   resources :messages
@@ -7,16 +12,6 @@ Rails.application.routes.draw do
   resources :messages do
     resources :comments
   end
-
-  root 'sessions#welcome'
-
-  resource :sessions
-
-  resources :users, except: :index
-
-  get 'homepage' => 'sessions#homepage'
-
-  get 'logout' => 'sessions#logout'
 
   # get 'sessions/new'
   # get 'users/new'
