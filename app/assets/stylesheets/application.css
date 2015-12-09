@@ -54,6 +54,11 @@ div.col-md-4.text-center {
   float: none !important;
 }
 
+input.btn:hover {
+  background-color: #18bc9c;
+  color: #fff;
+}
+
 /* SIGN UP AND SIGN IN FORM CSS CAN BE FOUND BELOW,
 BOTH OPERATE USING SEPERATE BOOTSTRAP ELEMENTS THAN THE REST OF THE PAGES*/
 
