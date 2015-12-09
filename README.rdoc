@@ -1,28 +1,9 @@
-== README
+This app can be viewed at docloc.co
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This was the final project that I created with John Hoeckele and Josh Breault for Wyncode's pitch day. It is a platform that pulls data from the Better Doctor API and lists the relevant information and populates a map using the Google API. We worked as a team for about 2 weeks in order to get the first working version. The site mostly uses JavaScript and jQuery in order to communicate with the API's. We implemented a Bootstrap theme. 
 
-Things you may want to cover:
+The site allows the user to search an area code for doctors, filtered by specialty and insurance provider. It plots the doctor's practice location onto a map and lists out the doctors on a table with their contact info. As a last minute addition we added a basic forum.
 
-* Ruby version
+During this project we used pair programming and a variant of the Agile system. 2 of us would work together from one computer while one worked on smaller tasks. We would then switch up the groups. This way everyone was able to work on all aspects of the project and contribute their unique perspectives. We had our daily stand-ups and retros every 4th day. We used this project as a way to familiarize ourselves with APIs, Javascript, AJAX, etc.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+I have continued working on the project on my own. Initially we used bcrypt for user authentication, but I decided to change to devise for ease of use in other features. I am going to update the forum to inlcude date created and user who created it. I am going to add a feature that allows a user to click on a doctor and view a full profile.
