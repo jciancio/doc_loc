@@ -25,7 +25,7 @@ $(function() {
 });
 
 //Javascript that only runs on the homepage view
-$('body.sessions.homepage').ready(function() {
+$('body.index.homepage').ready(function() {
   var location;
   var latitude;
   var longitude;
@@ -216,7 +216,6 @@ $('body.sessions.homepage').ready(function() {
     "<p><img src=" + image_url + ">" + first_name + " " + last_name + "<br>" + specialty + "<br>" + street + " " + city + ", "+ state + ", " + zip + "</p>"
     ].join();
   }
-
 
   //Sets the search button as a variable to be called by the google maps DomListener
   var searchButton = document.getElementById('doc-search');
