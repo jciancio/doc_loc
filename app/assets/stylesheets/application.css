@@ -80,31 +80,7 @@ h2 {
   text-align: center;
 }
 
-#signup .header h3, .new_user .header h3 {
-  color: #333333;
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-#signup .header p, .new_user .header p {
-  color: #8f8f8f;
-  font-size: 14px;
-  font-weight: 300;
-}
-
-#signup .sep, .new_user .sep {
-  height: 1px;
-  background: #e8e8e8;
-  width: 406px;
-  margin: 0px -25px;
-}
-
-#signup .inputs, .new_user .inputs {
-  margin-top: 25px;
-}
-
-#signup .inputs label, .new_user .inputs label {
+.new_user .inputs label {
   color: #8f8f8f;
   font-size: 12px;
   font-weight: 300;
@@ -121,7 +97,7 @@ input:-moz-placeholder {
   color:    #b5b5b5;
 }
 
-#signup .inputs input[type=email], input[type=password], input[type=text], .new_user .inputs input[type=email], input[type=password], input[type=text], textarea#message_description, input#message_title  {
+input[type=password], input[type=text], .new_user input[type=email], input[type=password], input[type=text], textarea#message_description, input#message_title  {
   background: #f5f5f5;
   font-size: 15px;
   -moz-border-radius: 3px;
@@ -135,69 +111,19 @@ input:-moz-placeholder {
   clear: both;
 }
 
-#signup .inputs input[type=email]:focus, input[type=password]:focus, input#message_title, .new_user .inputs input[type=email]:focus, input[type=password]:focus, input[type=text]:focus, textarea#message_description {
+input[type=password]:focus, input#message_title, .new_user input[type=email]:focus, input[type=password]:focus, input[type=text]:focus, textarea#message_description {
   background: #fff;
   box-shadow: 0px 0px 0px 3px #18bc9c, inset 0px 2px 3px rgba( 0,0,0,0.2 ), 0px 5px 5px rgba( 0,0,0,0.15 );
   outline: none;
 }
 
-#signup .inputs label.terms, .new_user .inputs label.terms {
+#signup .inputs label.terms, .new_user label.terms {
   float: left;
   font-size: 14px;
   font-style: italic;
 }
 
-#signup  .inputs .login, .new_user  .inputs .login {
-  width: 100%;
-  margin-top: 20px;
-  padding: 15px 0;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  text-align: center;
-  text-decoration: none;
-  background: -moz-linear-gradient(
-    top,
-    #b9c5dd 0%,
-    #a4b0cb);
-  background: -webkit-gradient(
-    linear, left top, left bottom,
-    from(#18bc9c),
-    to(#029176));
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  border: 1px solid #737b8d;
-  -moz-box-shadow:
-  0px 5px 5px rgba(000,000,000,0.1),
-  inset 0px 1px 0px rgba(255,255,255,0.5);
-  -webkit-box-shadow:
-  0px 5px 5px rgba(000,000,000,0.1),
-  inset 0px 1px 0px rgba(255,255,255,0.5);
-  box-shadow:
-  0px 5px 5px rgba(000,000,000,0.1),
-  inset 0px 1px 0px rgba(255,255,255,0.5);
-  text-shadow:
-  0px 1px 3px rgba(000,000,000,0.3),
-  0px 0px 0px rgba(255,255,255,0);
-  display: table;
-  position: static;
-  clear: both;
-}
-
-#signup .inputs #submit:hover {
-  background: -moz-linear-gradient(
-    top,
-    #a4b0cb 0%,
-    #b9c5dd);
-  background: -webkit-gradient(
-    linear, left top, left bottom,
-    from(#a4b0cb),
-    to(#b9c5dd));
-}
-
-#signup, .new_user {
+.new_user {
   padding: 0px 25px 25px;
   background: #fff;
   box-shadow:
@@ -210,9 +136,6 @@ input:-moz-placeholder {
   position: static;
 }
 
-#signup .header, .new_user .header {
-  margin-bottom: 20px;
-}
 /* End signup/Signin form css and bootstrap */
 
 .btn-success, .btn-success:hover {
@@ -256,10 +179,6 @@ a:hover {
   background-color: transparent;
   text-decoration: none !important;
 }
-
-/*a:visited {
-  color: #18bc9c !important;
-}*/
 
 div.message a {
   color: #18bc9c !important;
