@@ -17,6 +17,14 @@ feature 'Visitng Homepage Path' do
     find_field('zipcode')
     find_button('Validate')
   end
-  it 'displays two selection dropdown menus'
-  it 'displays a map'
+
+  it 'displays two selection dropdown menus and a search button' do
+    find('.specialty-dropdown')
+    find('.specialty-dropdown')
+    find_button('Search')
+  end
+
+  it 'displays a map' do
+    find('#map')
+  end
 end
