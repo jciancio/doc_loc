@@ -27,4 +27,7 @@ feature 'Visitng Homepage Path' do
   it 'displays a map' do
     find('#map')
   end
+
+  it 'displays a logout link'
+  it 'and clicking logout ends the session'
 end
