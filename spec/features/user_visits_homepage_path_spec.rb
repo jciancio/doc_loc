@@ -9,7 +9,9 @@ feature 'Visitng Homepage Path' do
     click_button('Log in')
   end
 
-  it 'displays personal welcome message'
+  it 'displays personal welcome message' do
+    page.has_content?('Welcome' + @user.email)
+  end
   it 'displays a zipcode form'
   it 'displays two selection dropdown menus'
   it 'displays a map'
