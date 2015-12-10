@@ -14,7 +14,9 @@ feature 'Visitng Root' do
     expect(current_path).to eq(new_user_session_path)
   end
 
-  it 'displays a link to sign up'
+  it 'displays a link to sign up' do
+    find_link('Sign up')
+  end
 
   it 'and clicking Sign Up goes to sign up path'
 end
