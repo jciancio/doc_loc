@@ -12,7 +12,11 @@ feature 'Visitng Homepage Path' do
   it 'displays personal welcome message' do
     page.has_content?('Welcome' + @user.email)
   end
-  it 'displays a zipcode form'
+
+  it 'displays a zipcode form' do
+    find_field('zipcode')
+    find_button('Validate')
+  end
   it 'displays two selection dropdown menus'
   it 'displays a map'
 end
