@@ -12,5 +12,11 @@ feature 'Registering' do
     find_button('Sign up')
   end
 
-  it 'submitting the form creates a user'
+  it 'submitting the form creates a user' do
+    fill_in('Email', with: 'example@example.com')
+    fill_in('Password', with: 'password')
+    fill_in('Password confirmation', with: 'password')
+    click_button('Sign up')
+    expect(User.find_by(email: 'example@example.com')).to be_a(User)
+  end
 end
