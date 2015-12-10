@@ -18,5 +18,8 @@ feature 'Visitng Root' do
     find_link('Sign up')
   end
 
-  it 'and clicking Sign Up goes to sign up path'
+  it 'and clicking Sign Up goes to sign up path' do
+    click_link('Sign up')
+    expect(current_path).to eq(new_user_registration_path)
+  end
 end
