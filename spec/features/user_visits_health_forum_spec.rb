@@ -1,6 +1,7 @@
 require 'rails_helper'
 
 feature 'Visiting Health Forum' do
+  include ActionView::Helpers
   before do
     @user = User.create(email: 'example@example.com', password: 'password')
     (1..100).each do |i|
@@ -27,6 +28,12 @@ feature 'Visiting Health Forum' do
   it 'displays a comment count on each message' do
     expect(page).to have_content(@message.comments.count)
   end
-  it 'displays a timestamp on each message'
-  it 'displays a user signature on each message'
+
+  it 'displays a timestamp on each message' do
+    expect(page).to have_content(time_ago_in_words(@message.created_at))
+  end
+
+  it 'displays a user signature on each message' do
+    expect(page).to have_content(@message.user.email)
+  end
 end

@@ -5,6 +5,8 @@
   <div class='col-md-4'>
     <div class='message'>
       <%= render message %>
+      <p>Created by: <%= message.user.email %>
+        <%= time_ago_in_words message.created_at %> ago</p>
       <p>Comments: <%= message.comments.count %></p>
       <br>
       <a class='btn-custom'<%= link_to 'View Discussion', message %>></a>
