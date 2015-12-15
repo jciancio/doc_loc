@@ -28,6 +28,12 @@ feature 'Visitng Homepage Path' do
     find('#map')
   end
 
-  it 'displays a logout link'
-  it 'and clicking logout ends the session'
+  it 'displays a logout link' do
+    find_link('Logout')
+  end
+
+  it 'and clicking logout ends the session' do
+    click_link('Logout')
+    expect(current_path).to eq(root_path)
+  end
 end
