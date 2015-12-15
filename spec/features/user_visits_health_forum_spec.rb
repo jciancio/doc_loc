@@ -3,8 +3,9 @@ require 'rails_helper'
 feature 'Visiting Health Forum' do
   before do
     @user = User.create(email: 'example@example.com', password: 'password')
-    100.times do |i|
-      @message = Message.create(title: "example #{i}", description: "example #{i}", user_id: @user.id)
+    (1..100).each do |i|
+      @message = Message.create(id: i, title: "example #{i}", description: "example #{i}", user_id: @user.id)
+      @comment = Comment.create(id: i, body: "comment #{i}", message_id: i)
     end
     visit new_user_session_path
     fill_in('Email', with: @user.email)
@@ -23,7 +24,9 @@ feature 'Visiting Health Forum' do
     expect(page).to have_content(@message.title)
   end
 
-  it 'displays a comment count on each message'
+  it 'displays a comment count on each message' do
+    expect(page).to have_content(@message.comments.count)
+  end
   it 'displays a timestamp on each message'
   it 'displays a user signature on each message'
 end
