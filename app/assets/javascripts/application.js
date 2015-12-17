@@ -26,6 +26,7 @@ $(function() {
 
 //Javascript that only runs on the homepage view
 $('body.index.homepage').ready(function() {
+  console.log('uh oh');
   var location;
   var latitude;
   var longitude;
@@ -52,14 +53,13 @@ $('body.index.homepage').ready(function() {
     geocoder = new google.maps.Geocoder();
 
     geocoder.geocode( { 'address': zipcode}, function callbackLat(results, status){
-
-    var lat = results[0].geometry.location.lat();
-    var lon = results[0].geometry.location.lng();
-    var loc = lat + "%2C" + lon;
-    location = loc;
-    console.log(location);
-    longitude = lon;
-    latitude = lat;
+      var lat = results[0].geometry.location.lat();
+      var lon = results[0].geometry.location.lng();
+      var loc = lat + "%2C" + lon;
+      location = loc;
+      console.log(location);
+      longitude = lon;
+      latitude = lat;
     });
   }
 
@@ -225,7 +225,7 @@ $('body.index.homepage').ready(function() {
   google.maps.event.addDomListener(window, 'load', initialize);
   google.maps.event.addDomListener(validateButton, 'click', function(e) {
     e.preventDefault();
-    getZipcode($('#zip').val());
+    getZipcode($('#zipcode').val());
     $(this).data('clicked', true);
     allowSearch();
   });
