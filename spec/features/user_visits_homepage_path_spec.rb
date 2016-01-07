@@ -20,7 +20,7 @@ feature 'Visitng Homepage Path' do
 
   it 'displays two selection dropdown menus and a search button' do
     find('.specialty-dropdown')
-    find('.specialty-dropdown')
+    find('.insurance-dropdown')
     find_button('Search')
   end
 
