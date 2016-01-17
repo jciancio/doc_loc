@@ -210,7 +210,7 @@ $('body.welcome.homepage').ready(function() {
     ].join();
   }
 
-   function box(image_url, first_name, last_name, specialty, street, city, state, zip) {
+  function box(image_url, first_name, last_name, specialty, street, city, state, zip) {
     return [
     "<p><img src=" + image_url + ">" + first_name + " " + last_name + "<br>" + specialty + "<br>" + street + " " + city + ", "+ state + ", " + zip + "</p>"
     ].join();
