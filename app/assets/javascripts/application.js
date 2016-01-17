@@ -187,7 +187,7 @@ $('body.welcome.homepage').ready(function() {
         var address = list[i].practices[0].visit_address;
         var specialty = specialties[0].actor;
         if(!list[i].ratings[0]) {
-          var stars = "/assets/rating-not-found.png"
+          var stars = "https://s3.amazonaws.com/docloc/rating-not-found.png"
         } else {
           var ratings = list[i].ratings[0];
           var stars = ratings.image_url_small;
