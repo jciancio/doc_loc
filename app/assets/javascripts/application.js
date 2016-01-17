@@ -25,8 +25,7 @@ $(function() {
 });
 
 //Javascript that only runs on the homepage view
-$('body.index.homepage').ready(function() {
-  console.log('uh oh');
+$('body.welcome.homepage').ready(function() {
   var location;
   var latitude;
   var longitude;
