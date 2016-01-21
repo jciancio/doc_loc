@@ -16,14 +16,6 @@
 //= require turbolinks
 //= require_tree .
 
-$(function() {
-  $('form#new_message').on('ajax:complete', function(event, xhr, status, error){
-    $('.message-list').append(xhr.responseText);
-    $('#message_title').val("");
-    $('#message_description').val("");
-  });
-});
-
 //Javascript that only runs on the homepage view
 $('body.welcome.homepage').ready(function() {
   var location;
