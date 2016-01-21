@@ -13,12 +13,15 @@
   <% end %>
   <!-- Form used for forum only, seperate css and bootstrap class identifiers than the signin/signup forms -->
   <div class="field">
-    <%= f.label 'Topic' %><br>
-    <%= f.text_field :title, name: 'topic' %>
+    <%= f.label :topic %><br>
+    <%= f.text_field :title %>
   </div>
   <div class="field">
     <%= f.label :description %><br>
     <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.hidden_field :user_id, value: current_user.id %>
   </div>
   <div class="actions">
     <a class='btn-custom'><%= f.submit %></a>
