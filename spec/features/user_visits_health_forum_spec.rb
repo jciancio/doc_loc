@@ -16,7 +16,7 @@ feature 'Visiting Health Forum' do
   end
 
   it 'displays a new message form' do
-    find_field('topic')
+    find_field('Topic')
     find_field('Description')
     find_button('Create Message')
   end
