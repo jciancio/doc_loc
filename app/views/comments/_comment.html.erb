@@ -1,5 +1,5 @@
 <p>
-  <%= comment.body %>
+  <p>By <%= comment.message.user.email %>: <%= comment.body %>
 </p>
 
 <%= link_to 'Edit', edit_comment_path(comment) %>
