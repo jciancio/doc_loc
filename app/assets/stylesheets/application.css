@@ -229,6 +229,11 @@ h1.forum-title {
     padding-bottom: 1.5em;
 }
 
+/* Add space between email and top of box in SignUp/LogIn */
+.field label[for="user_email"] {
+    margin-top: 1em;
+}
+
 /* Formatting for SignUp/Login Button */
 input[type=submit] {
     background-color: #fff;
