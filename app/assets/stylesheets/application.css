@@ -279,8 +279,22 @@ a.btn.btn-lg:hover {
   font-weight: 300;
 }
 
-.message-show h2 {
-  margin-top: 0;
+/* Centers Discussion Topic and Body
+when creating a New Comment */
+.container.new-comment.message-show {
+    text-align: center;
+}
+
+/* Back button on new comment page */
+.new-comment .btn {
+    background-color: #383838;
+    transition: background-color 0.7s ease;
+}
+
+/* Changes background color of the back
+button on new comment to white */
+.new-comment .btn:hover {
+    background-color: #ffffff;
 }
 
 .message-desc {
