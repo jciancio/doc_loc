@@ -1,8 +1,8 @@
 This app can be viewed at docloc.co
 
-This was the final project that I created with John Hoeckele and Josh Breault for Wyncode's pitch day. It is a platform that pulls data from the Better Doctor API and lists the relevant information and populates a map using the Google API. We worked as a team for about 2 weeks in order to get the first working version. The site mostly uses JavaScript and jQuery in order to communicate with the API's. We implemented a Bootstrap theme. 
+This was the final project that I created with John Hoeckele and Josh Breault for Wyncode's pitch day. It is a platform that pulls data from the Better Doctor API and lists the relevant information and populates a map using the Google API. We worked as a team for about 2 weeks in order to get the first iteration. The site mostly uses JavaScript and jQuery in order to communicate with the API's. We implemented a Bootstrap theme.
 
-The site allows the user to search an area code for doctors, filtered by specialty and insurance provider. It plots the doctor's practice location onto a map and lists out the doctors on a table with their contact info. As a last minute addition we added a basic forum.
+The site allows the user to search for doctors using their zipcode, filtered by specialty and insurance provider. It plots the doctor's practice location onto a map and lists out the doctors on a table with their contact info. The site also features an open message board.
 
 During this project we used pair programming and a variant of the Agile system. 2 of us would work together from one computer while one worked on smaller tasks. We would then switch up the groups. This way everyone was able to work on all aspects of the project and contribute their unique perspectives. We had our daily stand-ups and retros every 4th day. We used this project as a way to familiarize ourselves with APIs, Javascript, AJAX, etc.
 
