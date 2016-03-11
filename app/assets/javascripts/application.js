@@ -25,7 +25,7 @@ $('body.welcome.homepage').ready(function() {
 
   $('#zip-validate').data('clicked', false);
 
-  //Disable's the search button unless the validate button has been clicked
+  //Disables the search button unless the validate button has been clicked
   function disableSearch() {
     if(!$('#zip-validate').data('clicked')) {
       $('.specialty-dropdown').prop('disabled', true);
