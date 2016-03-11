@@ -141,7 +141,8 @@ $('body.welcome.homepage').ready(function() {
       var mapOptions = {
         center: new google.maps.LatLng(latitude, longitude),
         zoom: 8,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        scrollwheel: false
       }
 
       var map = new google.maps.Map(mapCanvas, mapOptions);
