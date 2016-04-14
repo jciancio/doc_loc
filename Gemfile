@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'quiet_assets'
+
 gem 'rails_12factor', group: :production
 gem 'pg'
 gem 'devise'
